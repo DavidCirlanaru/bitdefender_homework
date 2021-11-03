@@ -1,7 +1,7 @@
 # Bitdefender homework
 
 Bugs found during manual testing here:
-https://docs.google.com/document/d/10qH_Z6TL4VBySUAGyeAKw8POHPTsiOlxdn8sabw0vEw/
+https://docs.google.com/document/d/10qH_Z6TL4VBySUAGyeAKw8POHPTsiOlxdn8sabw0vEw/edit?usp=sharing
 
 The automated tests have been done using cypress
 
