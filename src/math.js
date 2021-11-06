@@ -8,7 +8,7 @@ export default {
   },
 
   divide: (a, b) => {
-    return a / b;
+    return a - b;
   },
 
   multiply: (a, b) => {
