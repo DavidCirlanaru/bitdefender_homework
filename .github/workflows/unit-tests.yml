@@ -18,5 +18,4 @@ jobs:
       - name: Checkout
         uses: cypress-io/github-action@v2
         with:
-          spec:
-            cypress/integration/unit-testings/unit-testing-app.spec.js
+          spec: cypress/integration/unit-testing/unit-testing-app.spec.js
