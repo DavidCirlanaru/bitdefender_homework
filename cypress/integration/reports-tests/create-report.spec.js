@@ -13,7 +13,7 @@ describe('Create report', () => {
         cy.url().should('include', '/reports/create')
     })
 
-    it('it should validate that dropdown expands on click inside input', () => {
+    it('it should validate that the options dropdown expands on click inside input', () => {
         cy.getInputByPlaceholder('Select type').should('be.visible')
         cy.getInputByPlaceholder('Select type').click()
         cy.getInputByPlaceholder('Select type').should('have.attr', 'aria-expanded', 'true')
@@ -22,10 +22,9 @@ describe('Create report', () => {
         cy.getInputByPlaceholder('Select Company').click()
         cy.getInputByPlaceholder('Select Company').should('have.attr', 'aria-expanded', 'true')
         cy.getFirstInputDropdownOption().should('be.visible')
-
     })
 
-    it('it should validate that dropdown expands on click on arrow icon', () => {
+    it('it should validate that the options dropdown expands on click on arrow icon', () => {
         cy.get('app-create form autocomplete-trigger-arrow').click()
         cy.getInputByPlaceholder('Select type').should('have.attr', 'aria-expanded', 'true')
         cy.getFirstInputDropdownOption().should('be.visible')
@@ -42,8 +41,6 @@ describe('Create report', () => {
 
     it('it should validate that name input', () => {
         cy.getInputByPlaceholder('Enter name').type('Test').should('have.value', 'Test')
-
-        // special characters or numbers should not be allowed or be removed
         cy.getInputByPlaceholder('Enter name').clear().type('Test!@#$%321').should('have.value', 'Test')
     })
 
