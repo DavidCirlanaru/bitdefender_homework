@@ -1,5 +1,12 @@
 {
-  "dependencies": {
-    "cypress": "^8.7.0"
-  }
+    "name": "bitdefender_homework",
+    "scripts": {
+        "test": "cypress run",
+        "cypress:open": "cypress open",
+        "cypress:run": "cypress run",
+        "cypress:record": "cypress run --record --key"
+    },
+    "devDependencies": {
+        "cypress": "^8.7.0"
+    }
 }
